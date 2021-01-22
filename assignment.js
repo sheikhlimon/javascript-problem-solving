@@ -53,9 +53,13 @@ function hotelCost(days) {
 
 function megaFriend(arr) {
     var longestString = arr[0];
+    //compare the index length and show the largest string
     for (i = 0; i < arr.length; i++) {
         if (arr[i].length > longestString.length) {
             longestString = arr[i];
+        }
+        else {
+            longestString = 'Array cannot be empty';
         }
     }
     return longestString;
