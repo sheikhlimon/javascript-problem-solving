@@ -58,9 +58,6 @@ function megaFriend(arr) {
         if (arr[i].length > longestString.length) {
             longestString = arr[i];
         }
-        else {
-            longestString = 'Array cannot be empty';
-        }
     }
     return longestString;
 }
