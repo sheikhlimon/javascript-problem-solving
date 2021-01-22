@@ -1,11 +1,11 @@
 // https://github.com/sheikhlimon/javascript-problem-solving
 
 
-// First problem convert killometer to meter
+// First problem convert kilometer to meter
 
 function kilometerToMeter(kilometers) {
     var meters
-    // check the value postive or negative and multiply kilometers by 1000
+    // check the value positive or negative and multiply kilometers by 1000
     if (kilometers > 0) {
         meters = kilometers * 1000;
     } else {
