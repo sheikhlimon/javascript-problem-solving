@@ -4,10 +4,15 @@
 // First problem convert killometer to meter
 
 function kilometerToMeter(kilometers) {
-    // multiply kilometers by 1000
-    var meters = kilometers * 1000;
-    return meters;
+    var meters
+    // check the value postive or negative and multiply kilometers by 1000
+    if (kilometers > 0) {
+        meters = kilometers * 1000;
+    } else {
+        meters = 'Distance cannot be negative';
     }
+    return meters;
+}
 
 // Second problem create a budget calculator
 
@@ -26,7 +31,7 @@ function hotelCost(days) {
     // multiply 100 with given days if its less than or equal to 10
     if (days <= 10) {
         cost = days * 100;
-    // multiply 80 with given days if its less than or equal to 20
+        // multiply 80 with given days if its less than or equal to 20
     } else if (days <= 20) {
         var firstTenDays = 10 * 100;
         var remainingDays = days - 10;
